@@ -1,0 +1,97 @@
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url("background.jpg"); 
+                background-size: cover;  
+                background-color: #333; 
+                background-repeat: no-repeat; 
+                background-attachment: fixed ;
+                font-family: 'Poppins', sans-serif;
+                
+                
+            }
+            @media (max-width: 600px) {
+             nav ul {
+            flex-direction: column; /* stack vertically */
+            gap: 10px;
+            }
+            nav.shrink ul li a {
+             font-size: 12px;
+              }
+            }
+            nav{
+                width: 100%; /* full width */
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+                
+                position: fixed;
+                top: 0;       /* stick to top */
+                left: 0;
+                z-index: 100;
+                display: flex; /* important for flex properties to work */
+                background-color: rgb(56, 203, 56)  ;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                transition: all 0.3s ease;
+            }
+            nav.shrink {
+            height: 50px;              /* smaller height on scroll */
+            }
+            nav ul{
+                display: flex;
+                justify-content: center;
+                font-size: large;
+            }
+            nav ul li{
+                list-style: none;
+                margin: 0 23px ;
+            }
+            nav ul li a{
+                
+                text-decoration: none;
+                color: white;
+            }
+            nav.shrink ul li a {
+                font-size: 14px;           /* smaller font on scroll */
+            }
+            nav ul li a:hover{
+                color: black;
+               
+            }
+            .left{
+                font-size: 1.5rem;
+            }
+            .photo{
+                 display: flex;               /* enable flex */
+                 justify-content: center;     /* horizontal center */
+                 align-items: center;         /* vertical center (optional) */
+                  margin-top: 120px;  
+            }
+            .photo img{         
+                background-image: url('your-image.jpg');   
+                max-width: 50%;
+                height: auto;
+                border-radius: 50%;
+                display: inline-block;
+                border-radius: 100%; 
+            }
+            .name{
+                display: flex;               
+                justify-content: center;     
+                align-items: center;         
+                height: 100px;               
+                text-align: center;
+                font-size: larger;
+            }
+            .introduction title{
+                display: flex;               
+                justify-content: center;     
+                align-items: center;         
+                height: 100px;               
+                text-align: center;
+                font-size: larger;
+            }
+            
